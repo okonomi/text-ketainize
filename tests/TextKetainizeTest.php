@@ -38,6 +38,14 @@ class TextKetainizeTest extends PHPUnit_Framework_TestCase
                 '今日は、いい天気。',
                 '今日は､いい天気｡',
             ),
+            array(
+                'な、なんだってー！？',
+                'な､なんだってｰ!?',
+            ),
+            array(
+                '新シリーズ開始!',
+                '新ｼﾘｰｽﾞ開始!',
+            ),
         );
     }
 }

@@ -10,16 +10,9 @@ class Text_Ketainize
     public function lineEcho($str)
     {
         return preg_replace(
-            array('/（/', '/）/', '/、/', '/。/', '/！/'),
-            array('('   , ')'  , '､'   , '｡',     '!'),
+            array('/（/', '/）/', '/、/', '/。/', '/！/', '/？/'),
+            array('('   , ')'  , '､'   , '｡',     '!',   '?'),
             mb_convert_kana($str, 'k', 'utf-8')
         );
     }
 }
-
-
-
-
-
-
-
