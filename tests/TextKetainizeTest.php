@@ -30,7 +30,14 @@ class TextKetainizeTest extends PHPUnit_Framework_TestCase
     public function lineEchoProvider()
     {
         return array(
-            array('12月20日（月）', '12月20日(月)'),
+            array(
+                '12月20日（月）',
+                '12月20日(月)',
+            ),
+            array(
+                '今日は、いい天気。',
+                '今日は､いい天気｡',
+            ),
         );
     }
 }
